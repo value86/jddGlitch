@@ -1,0 +1,103 @@
+extends ./extends/orderDetail_layout
+
+block content
+
+    div.main.p-2.flex-grow-1.bd-dark
+        div.p-2.bid-list-header
+            .row.no-gutters
+                .col-2 现/期
+                .col-4 单价(円)
+                .col-4 数量
+            .row.no-gutters
+                .col-6 用户名
+                .col-6 交易时间
+        .list-group.bid-list
+            a.list-group-item.list-group-item-action.flex-column.align-items-start( href="#")
+                .row.no-gutters
+                    .col-2
+                        span.badge.badge-info.m-1 现
+                    .col-4 10000(-100)
+                    .col-4 500箱
+                    .col-2.text-right
+                        button.btn.btn-primary.btn-sm(type="button") 成约
+                .row.no-gutters
+                    .col-6 万象通商
+                    .col-6 2018/11/20 上午
+
+            a.list-group-item.list-group-item-action.flex-column.align-items-start( href="#")
+                .row.no-gutters
+                    .col-2
+                        span.badge.badge-info.m-1 现
+                    .col-4 10000(-100)
+                    .col-4 500箱
+                    .col-2.text-right
+                        button.btn.btn-primary.btn-sm(type="button") 成约
+                .row.no-gutters
+                    .col-6 万象通商
+                    .col-6 2018/11/20 上午
+
+            a.list-group-item.list-group-item-action.flex-column.align-items-start.disabled( href="#")
+                .row.no-gutters
+                    .col-2
+                        span.badge.badge-info.m-1 现
+                    .col-4 10000(-100)
+                    .col-4 500箱
+                    .col-2.text-right 被取消
+                .row.no-gutters
+                    .col-6 万象通商
+                    .col-6 2018/11/20 上午
+        table.table.table-sm.table-bordered
+            thead
+                tr
+                    th(colspan="2") 已选
+            tbody
+                tr
+                    th.w-50(scope="row") 平均价格
+                    td 10000(-100)
+                tr
+                    th(scope="row") 总数量
+                    td 50000(+100)
+                tr
+                    th(scope="row") 商家数
+                    td 5
+                tr
+                    th(scope="row") 最迟交易日
+                    td 2018/11/20 上午
+                tr
+                    th(scope="row") 最高价
+                    td 10100(+100)
+                tr
+                    th(scope="row") 最低价
+                    td 9900(-100)
+        table.table.table-sm.table-bordered
+            thead
+                tr
+                    th(colspan="2") 出价统计
+            tbody
+                tr
+                    th.w-50(scope="row") 最高价
+                    td 10100(+100)
+                tr
+                    th(scope="row") 最低价
+                    td 9900(-100)
+                tr
+                    th(scope="row") 总数量
+                    td 50000(+100)
+                tr
+                    th(scope="row") 商家数
+                    td 5
+                tr
+                    th(scope="row") 最迟交易日
+                    td 2018/11/20 上午
+                tr
+        table.table.table-sm.table-bordered
+            thead
+                tr
+                    th(colspan="2") 详细
+            tbody
+                tr
+                    th.w-50(scope="row") 目标价格
+                    td 10000
+                tr
+                    th(scope="row") 目标数量
+                    td 50000

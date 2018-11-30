@@ -1,0 +1,13 @@
+doctype html
+html(lang='ja')
+  head
+    include ../includes/sectionHead/head
+    //- link(rel='stylesheet', href='/stylesheets/commons/default/validation.css')
+    //- link(rel='stylesheet', href='/stylesheets/01contents.css')
+
+  body
+    div.h-100.d-flex.flex-column
+        include ../includes/sectionBody/header
+        block content
+        include ../includes/sectionBody/footer
+

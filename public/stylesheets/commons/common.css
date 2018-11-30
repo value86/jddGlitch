@@ -1,0 +1,57 @@
+html,
+body {
+    height: 100%;
+}
+
+div.main {
+    overflow: auto;
+}
+
+.card-body img {
+    width: 100%;
+}
+
+.card-header,
+.card-body,
+.card-footer {
+    padding: 0.4rem;
+}
+
+.card-header,
+.card-footer {
+    font-size: 0.7rem;
+}
+
+.card {
+    cursor: pointer;
+    margin: 3px;
+}
+
+.list-group a {
+    padding: 0.4rem;
+}
+
+.bid-list-header,
+.bid-list-footer {
+    font-weight:700;
+}
+
+.bid-list-header div[class*="col-"],
+.bid-list div[class*="col-"],
+.bid-list-footer div[class*="col-"]{
+    padding-left: .1rem;
+    padding-right: .1rem;
+}
+
+.bid-list a.selecting {
+    background-color: blue;
+    color: white;
+}
+
+.bid-list a.selected {
+    background-color: aliceblue;
+}
+
+.bid-list a.canceled {
+    background-color: #d8d8d8;
+}

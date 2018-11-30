@@ -1,0 +1,39 @@
+extends ./extends/myPage_layout
+
+block content
+
+    div.main.p-2.flex-grow-1.bd-dark
+        nav.nav.nav-pills.flex-xs-column.flex-sm-row
+            a.flex-fill.text-center.nav-link.active(href='#') 订单
+            |                 
+            a.flex-fill.text-center.nav-link(href='#') 出价
+            |                 
+            a.flex-fill.text-center.nav-link(href='#') 关注
+            |                 
+            a.flex-fill.text-center.nav-link(href='#') 收藏
+        
+            .card(onclick="location.href='/myOrderDetail?oid=1'")
+                .card-header
+                    .row.no-gutters
+                        h5.card-title.mb-1 标题最大2行....................
+                .card-body
+                    .row.no-gutters
+                        .col-5.pr-1
+                            img(src='/images/img1.png', alt='Card image cap')
+                            span.badge.badge-info.m-1 现
+                            span.badge.badge-success.m-1 运
+                        .col-7
+                            .row.no-gutters
+                                .col-6 #1234567890
+                                .col-6.text-right 今天 14:23
+                            dl.row.no-gutters.mb-1
+                                dt.col-4 目标
+                                dd.col-8.mb-1 500000円
+                                dt.col-4  数量
+                                dd.col-8.mb-1  500000箱
+                            .float-left 心
+                            p.card-text.text-right
+                                a(href="#") 
+                                    small.text-muted 有10人出价
+                .card-footer
+                    small.text-muted 株式会社 万象通商

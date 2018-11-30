@@ -1,0 +1,127 @@
+extends ./extends/orderDetail_layout
+
+block content
+
+    div.main.p-2.flex-grow-1.bd-dark
+        h4 我的订单详细
+        h5.mb-0 出价列表
+        div.p-2.bid-list-header
+            .row.no-gutters
+                .col-2 现/期
+                .col-4 单价(円)
+                .col-4 数量
+            .row.no-gutters
+                .col-6 用户名
+                .col-6 交易时间
+        .list-group.bid-list
+            a.list-group-item.list-group-item-action.flex-column.align-items-start.selecting( href="#")
+                .row.no-gutters
+                    .col-2
+                        span.badge.badge-info.m-1 现
+                    .col-4 10000(-100)
+                    .col-4 500箱
+                    .col-2.text-right  已选
+                .row.no-gutters
+                    .col-6 万象通商
+                    .col-6 2018/11/20 上午
+                small 备注：上门自取
+
+            a.list-group-item.list-group-item-action.flex-column.align-items-start.selected( href="#")
+                .row.no-gutters
+                    .col-2
+                        span.badge.badge-info.m-1 现
+                    .col-4 10000(-100)
+                    .col-4 500箱
+                    .col-2.text-right 选过
+                .row.no-gutters
+                    .col-6 万象通商
+                    .col-6 2018/11/20 上午
+
+            a.list-group-item.list-group-item-action.flex-column.align-items-start.disabled( href="#")
+                .row.no-gutters
+                    .col-2
+                        span.badge.badge-info.m-1 现
+                    .col-4 10000(-100)
+                    .col-4 500箱
+                    .col-2.text-right 
+                .row.no-gutters
+                    .col-6 万象通商
+                    .col-6 2018/11/20 上午
+
+            a.list-group-item.list-group-item-action.flex-column.align-items-start.disabled.canceled( href="#")
+                .row.no-gutters
+                    .col-2
+                        span.badge.badge-info.m-1 现
+                    .col-4 10000(-100)
+                    .col-4 500箱
+                    .col-2.text-right 取消
+                .row.no-gutters
+                    .col-6 万象通商
+                    .col-6 2018/11/20 上午
+        table.table.table-sm.table-bordered.mt-2
+            thead
+                tr
+                    th(colspan="2") 已选（10）
+            tbody
+                tr
+                    th.w-50(scope="row") 平均价格
+                    td 10000(-100)
+                tr
+                    th(scope="row") 总数量
+                    td 50000(+100)
+                tr
+                    th(scope="row") 总价
+                    td 5000000
+                tr
+                    th(scope="row") 商家数
+                    td 5
+                        a.ml-3(href="#") 详细
+                tr
+                    th(scope="row") 最晚交易日
+                    td 2018/11/20 上午
+                tr
+                    th(scope="row") 最高价
+                    td 10100(+100)
+                tr
+                    th(scope="row") 最低价
+                    td 9900(-100)
+                tr
+                    td.text-right(colspan="2") 
+                        button.btn.btn-primary.btn-sm(type="button") 成交
+        table.table.table-sm.table-bordered
+            thead(data-toggle="collapse" onclick="$('#collapseDid').collapse('toggle')")
+                tr
+                    th(colspan="2") 出价统计
+            tbody.collapse(id="collapseDid")
+                tr
+                    th.w-50(scope="row") 最高价
+                    td 10100(+100)
+                tr
+                    th(scope="row") 最低价
+                    td 9900(-100)
+                tr
+                    th(scope="row") 总数量
+                    td 50000(+100)
+                tr
+                    th(scope="row") 商家数
+                    td 5
+                tr
+                    th(scope="row") 最晚交易日
+                    td 2018/11/20 上午
+                tr
+        table.table.table-sm.table-bordered
+            thead(data-toggle="collapse" onclick="$('#collapseDetail').collapse('toggle')")
+                tr
+                    th(colspan="2") 订单详情
+            tbody.collapse(id="collapseDetail")
+                tr
+                    th.w-50(scope="row") 
+                        | 目标价格
+                        <br>
+                        | 
+                        small *备注：百起百起百起百起百起百起百起百起百起百起百起百起百起百起
+                    td 10000
+                        
+                tr
+                    th(scope="row") 目标数量
+                    td 50000
