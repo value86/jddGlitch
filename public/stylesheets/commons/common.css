@@ -46,6 +46,7 @@ div.main {
 .bid-list a.selecting {
     background-color: blue;
     color: white;
+    font-weight:600;
 }
 
 .bid-list a.selected {
@@ -54,4 +55,14 @@ div.main {
 
 .bid-list a.canceled {
     background-color: #d8d8d8;
+}
+
+span.bidType{
+    margin:-5px 0 -5px -5px;
+    padding:5px;
+    font-size: 0.9rem;
+}
+
+img.star{
+    width:20px;
 }

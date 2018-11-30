@@ -6,7 +6,7 @@ block content
         nav.nav.nav-pills.flex-xs-column.flex-sm-row
             a.flex-fill.text-center.nav-link.active(href='#') 订单
             |                 
-            a.flex-fill.text-center.nav-link(href='#') 出价
+            a.flex-fill.text-center.nav-link(href='#') 待成交
             |                 
             a.flex-fill.text-center.nav-link(href='#') 关注
             |                 
@@ -15,7 +15,9 @@ block content
             .card(onclick="location.href='/myOrderDetail?oid=1'")
                 .card-header
                     .row.no-gutters
-                        h5.card-title.mb-1 标题最大2行....................
+                        h5.card-title.mb-1 
+                            span.badge.badge-danger.bidType 收
+                            | 标题最大2行....................
                 .card-body
                     .row.no-gutters
                         .col-5.pr-1
